@@ -1,0 +1,64 @@
+<!-- Signup Form
+Create a new project on your computer that includes an index.html. In the file, write valid 
+and semantic HTML that includes a form that has the following fields:
+
+Email
+Password
+Github Username
+Radio buttons with the following options: Enterprise, Pro, Free
+A checkbox with the words "Remember Me" next to it.
+Push your code up to Github and then paste the URL to your repository below. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Form-Challenge</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Form</legend>
+    <!-- Email -->
+            <div>
+                <label for="Email">Email:</label>
+                <input type="text" id="Email" name="Email">
+            </div>
+    <!-- Password -->
+            <div>
+                <label for="Password">Password:</label>
+                <input type="password" name="Password">
+            </div>
+    <!-- Github Username -->
+            <div>
+                <label for="Github">Github Username:</label> 
+                <input type="text" name="Github">
+            </div>
+    <!-- Version -->
+            <div>
+                Location: 
+            </div>
+            <div>
+                <input type="radio" id="Enterprise" name="version" value="Enterprise" />
+                <label for="Enterprise">Enterprise</label>
+            </div>
+
+            <div>
+                <input type="radio" id="Pro" name="version" value="Pro" />
+                <label for="Pro">Pro</label>
+            </div>
+
+            <div>
+                <input type="radio" id="Free" name="version" value="Free" checked />
+                <label for="Free">Free</label>
+            </div>
+    <!-- Remember me check box -->
+            <div>
+                Remember Me: <input type="checkbox">
+            </div>
+        </fieldset>
+    <button>Submit</button>
+    </form>
+</body>
+</html>
